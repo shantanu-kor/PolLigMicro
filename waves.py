@@ -36,7 +36,8 @@ class IPolLig:
             ang.append(a1[0]/ a1[1])
         return lis1, lis2, lis3, ang
 
-    def plotintrf(self, pr=0.00278) -> None:
+    def plotintrf(self, pr=1) -> None:
+        pr = Decimal(str(math.tan(Decimal(str(pr)) * Decimal(str(math.pi)) / 360)))
         plt.subplot(2, 1, 1)
         plt.plot(self.idata[0], self.idata[1])
         plt.title("Interference wave")
