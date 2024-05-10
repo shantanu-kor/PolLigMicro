@@ -12,7 +12,7 @@ u1: Low RI
 
 u2: High RI
 
-t: Thickness of light (100 um)
+t: Thickness of material (100 um)
 
 u: RI of medium (1.0)
 
